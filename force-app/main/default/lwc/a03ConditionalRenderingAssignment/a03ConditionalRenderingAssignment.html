@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Conditional Rendering Assignment for Password">
+    <lightning-input type="text" placeholder="Please Provide The Password" onblur={handleBlur}>
+
+    </lightning-input><lightning-button label="Enter" variant="success">
+      
+    </lightning-button>
+    <br>  <template if:false={flag}>
+          <div>Invalid Password</div></template>
+          <template if:true={flag}>
+            <div>Valid Password</div></template>
+      
+              
+  </lightning-card>
+  
+</template>

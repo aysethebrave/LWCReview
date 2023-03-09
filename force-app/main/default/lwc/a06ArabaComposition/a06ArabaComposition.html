@@ -1,0 +1,14 @@
+<template>
+ <lightning-card title="ARABA">
+<h1>Bu bilgiler ARABA componentinden geliyor</h1><br>
+<h1>
+  Araba Markasi:: {arabaMarkasi}
+</h1><br>
+<lightning-input 
+type="text" 
+label="Yakit Turu Giriniz"
+onblur={handleYakitTuru}></lightning-input>
+<c-a06-motor-hakkinda motor-cinsi='Hybrid'
+yakit-turu-parent={yakitTuruDede}></c-a06-motor-hakkinda>
+ </lightning-card>   
+</template>

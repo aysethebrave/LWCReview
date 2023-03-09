@@ -1,0 +1,11 @@
+<!--TASK 127: Parent ve Child olarak iki adet LWC olusturalım. Child componentin ekranından alacağımız bir city bilgisinin Parent componentin ekranında büyük harflerle değiştirilmiş olarak görünmesini sağlayalım lütfen. (Custom event)-->
+<template>
+  <lightning-card title="Parent Component">
+    <div class="slds-m-around_medium">
+      Value From Child :  {city}
+      <c-z05-custom-event-child-task127 onmycustomevent={handleCustomEvent}></c-z05-custom-event-child-task127>
+  </div>
+  </lightning-card>
+  
+  
+</template>

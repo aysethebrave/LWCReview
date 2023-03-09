@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Find The Account"><div>
+    <lightning-input 
+    label="Search Account" placeholder="Please provide keyword/letter" 
+    onchange={handleOnchange} 
+    value={searchKey}></lightning-input>
+    <lightning-button 
+    label="Find Account" 
+    onclick={handleOnclick} ></lightning-button>
+
+<template if:true={accounts} >
+<div >
+  <template for:each={accounts} for:item="acc">
+<div key={acc.Id}> {acc.Name}</div>
+
+ </template>
+</div>
+
+</template>
+  </div>
+<div> {error}</div>
+  </lightning-card>
+
+
+
+</template>

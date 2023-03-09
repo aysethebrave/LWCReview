@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Motor Cinsi">
+    <lightning-combobox   name ='motor'
+                      label="Motor cinsini seciniz"
+                      options={motorSepeti}
+                      value={motor}
+                      onchange={handlePicklist}>
+ </lightning-combobox>
+<h1> Motor Cinsi:  {motor}</h1>
+</lightning-card> 
+</template>

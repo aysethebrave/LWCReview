@@ -1,0 +1,42 @@
+<template>
+  <lightning-card  title="Data Binding (tek yonlu)">
+    <h1>Benim adim {isim}</h1>
+</lightning-card> 
+<lightning-card title="Data Binding(Cıft yon)">
+  <lightning-input type="text" label="Adinizi giriniz !!" onblur={handleInput}>
+
+  </lightning-input>
+  <h1>Benim adim {ad}</h1>
+</lightning-card>
+
+<lightning-card  title="Data Binding (tek yonlu)">
+  <h1>Benim adim {isim}</h1>
+</lightning-card> 
+<lightning-card title="Data Binding(Manuple)">
+<lightning-input type="text" label="Namenizi giriniz !!!!" onchange={handleOnchange}>
+
+</lightning-input>
+<h1>Benim adim {ismiBuyukHarfeCevir}</h1>
+</lightning-card>
+<lightning-card title="Data Binding(Tam isim)">
+  <lightning-input type="text" label="Namenizi giriniz !!!!" onblur={handleIsim}>
+  
+  </lightning-input>
+  <lightning-input type="text" label="LastNamenizi giriniz !!!!" onblur={handleSoyIsim}>
+  
+  </lightning-input>
+  <h1>Full ismim {TamIsim}</h1>
+  </lightning-card>
+
+  <lightning-card title="Data Binding(Multiply Two Numbers)">
+    <lightning-input type="number" label="Provide a number please" onblur={handlenum1}>
+    
+    </lightning-input>
+    <lightning-input type="number" label="Provide one more number please" onblur={handlenum2}>
+    
+    </lightning-input>
+    <h1>Result = {HandleResult}</h1>
+    </lightning-card>
+
+
+</template>

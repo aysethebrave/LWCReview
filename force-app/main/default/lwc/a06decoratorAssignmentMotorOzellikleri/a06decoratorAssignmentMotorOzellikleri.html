@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title="Motor Ozellikleri">
+    <lightning-combobox   name ='Yakit Turu'
+                      label="Yakit turu seciniz"
+                      options={yakitTurleri}
+                      value={yakit}
+                      onchange={handleYakitPicklist}>
+ </lightning-combobox>
+<h1>Yakit Turu : {yakit}</h1>
+<lightning-card >
+  <lightning-combobox   name ='Motor gucu'
+                    label="Motor gucu seciniz"
+                    options={motorGucleri}
+                    value={motorGucu}
+                    onchange={handleMotorGucuPicklist}>
+                  
+</lightning-combobox>
+</lightning-card> 
+<h1>Motor Gucu : {motorGucu}</h1>
+<lightning-card >
+  <lightning-combobox   name ='Beygir Gucu'
+                    label="Beygir gucu seciniz"
+                    options={beygirGucleri}
+                    value={beygirGucu}
+                    onchange={handleBeygirGucuPicklist}>
+                  
+</lightning-combobox></lightning-card> 
+
+<h1>Beygir Gucu : {beygirGucu}</h1>
+
+</lightning-card> 
+</template>

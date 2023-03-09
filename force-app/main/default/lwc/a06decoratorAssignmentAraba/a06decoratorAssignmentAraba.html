@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-grid slds-gutters">
+    <div class="slds-col">
+      <span><lightning-card title="Araba Markasi">
+    <lightning-combobox   name ='araba'
+                      label="Araba markasini seciniz"
+                      options={arabaSepeti}
+                      value={araba}
+                      onchange={handlePicklist}>
+ </lightning-combobox>
+<h1>Araba Markasi: {araba}</h1>
+</lightning-card> </span>
+    </div>
+    <div class="slds-col">
+      <span><c-a06decorator-assignment-motor motor-sepeti={motorArabadan}></c-a06decorator-assignment-motor></span>
+    </div>
+    <div class="slds-col">
+      <span><c-a06decorator-assignment-motor-ozellikleri></c-a06decorator-assignment-motor-ozellikleri></span>
+    </div>
+  </div>
+<br>
+
+
+
+
+    
+</template>

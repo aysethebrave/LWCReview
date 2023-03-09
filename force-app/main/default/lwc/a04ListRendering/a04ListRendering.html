@@ -1,0 +1,39 @@
+<template>
+  <lightning-card title="List Rendering (for:each)">
+<p>Tüm listeyi buraya getirdik</p>
+    <h1>{sehirListesi} 
+          </h1>
+          <p>
+            for each loop ile yazdırdık
+          </p>
+    <template for:each={sehirListesi} for:item="Sehir">
+<p key={Sehir}> Sehrin adi:: {Sehir}
+  
+</p>
+    </template>
+  </lightning-card>
+  <lightning-card title="List Rendering (Iterator)">
+    <p>Iterator ile yazdırdık</p>
+    <template iterator:it={sehirListesi} >
+      <p key={it.value}> Sehrin adi:: {it.value}
+        
+      </p>
+          </template>
+  </lightning-card>
+  <lightning-card title="Iterator ve for each farki">
+    <template iterator:it={sehirListesi} >
+      <p key={it.value} if:true={it.first}>
+Bakiniz bu nerede cikti it.first
+      </p>
+      <p key={it.value}> Sehrin adi:: {it.value}
+        
+      </p>
+      <p key={it.value} if:true={it.last}>
+        Bakiniz bu nerede cikti it.last
+              </p>
+          </template>
+
+
+  </lightning-card>
+    
+</template>

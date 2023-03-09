@@ -1,0 +1,22 @@
+<template>
+<lightning-card title=" Parenttan Childa  Object tasinmasi">
+<c-aaa-render-call-back-assignment-child  student-info= {studentDetail}>
+</c-aaa-render-call-back-assignment-child >
+
+
+<lightning-input 
+    type="text"
+    label="lutfen isminizi giriniz"
+    placeholder="lutfen isminizi giriniz"
+    onchange={handleName}></lightning-input>
+    <br>
+    <lightning-input
+    type="number"
+    min="0"
+    label="lutfen yasinizi giriniz"
+    placeholder="lutfen yasinizi giriniz"
+    onchange={handleAge}>
+  </lightning-input>
+  <lightning-button variant="success" label="Send to Child" onclick={handleOnClick}></lightning-button>
+</lightning-card>
+</template>

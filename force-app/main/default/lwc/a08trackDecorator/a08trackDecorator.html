@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="Track Decorator">
+    <lightning-input type="text" label="Adinizi giriniz !!" onblur={handleAd}>
+      </lightning-input>
+      <lightning-input type="text" label="Yasinizi giriniz !!" onblur={handleYas}>
+      </lightning-input>
+  <lightning-button label="Send info to Object" variant="success" onclick={handleClick} ></lightning-button>
+
+      <h1>AD : {ad}</h1>
+      <h1>SOYAD : {soyad}</h1>
+      <h1>AILE BIREY NAME : {aileBireyi.name}</h1>
+      <h1>AILE BIREY YAS : {aileBireyi.yas}</h1>
+  </lightning-card>
+    
+   
+
+
+
+
+
+</template>

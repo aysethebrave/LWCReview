@@ -1,0 +1,43 @@
+<template>
+   
+  <lightning-card title="To-Do-List">
+      <lightning-input 
+      type="text"
+      placeholder="Enter task" 
+      value={myTask} 
+      onchange={handleTask}>
+
+      </lightning-input>
+       <lightning-button 
+        variant="brand" 
+        label="ADD" 
+        onclick={handleAdd}>
+
+        </lightning-button>
+        <lightning-layout pull-to-boundary="medium">
+<lightning-layout-item padding="horizontal-small" size="12">
+  <template for:each={todoList} for:item ="task">
+         <ul key={task.id}>
+            <li class="iteration" >
+             <lightning-layout-item padding="horizontal-small" flexibility="auto">
+              {task.name}
+             </lightning-layout-item>
+             <lightning-layout-item alignment-bump="left" >
+               <lightning-button-icon  icon-name="utility:delete"    alternative-text="Delete" 
+              name={task.id} 
+              onclick={handleDelete}
+              label="Delete" 
+              variant="brand" 
+              class="deletebutton">
+        </lightning-button-icon> 
+             </lightning-layout-item>
+             
+            </li>
+          </ul>
+        </template>
+</lightning-layout-item>
+
+        </lightning-layout>
+                        
+        </lightning-card>
+</template>
